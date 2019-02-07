@@ -1,0 +1,51 @@
+1. necesitamos un repositorio  
+	Se llego a la conclusion utilizar git como repositorio
+2. base de datos?	
+	Oracle
+	MySql
+
+3. definir objetos
+
+	Login (seguridad)
+		
+		a) module_lab
+			ejemplos:
+				1 colegios app (telefonos),hola aaron
+				2 colegios web
+				3 pedidos app
+				4 facturacion app 
+			
+				aca van los id's de las app que vallamos generando
+		b) user_lab (todos los usuarios)
+			id, nombres, telefono, direccion, contraseña, activo, fecha_expiracion(puede o no llevar?)
+			1    aaron 
+			
+		c) rol_lab (administrador, operador)		
+			1 administrador
+			2 operador
+		d) rol_aplication_lab (acceso a las pantallas (urls)  menus)
+			aca van las aplicaciones 
+				ejemplo:
+					1 /colegio/ingresousuario.html    2  1
+					2 /colegio/consultaalumno.html    2  1
+					3 /colegio/consultaalumno.html    2  2					
+					4 /colegio/consultaalumno.swift   1  2
+					5 Consultas (padre)
+					6 Consulta Alumno   /colegio/consultaalumno.html 5  2   1
+					7 Ingreso Alumno   /colegio/ingresoalumno.html   5  2   1					
+					
+					routers
+					
+			con el rol en especifico y cada id de esta tabla va asignado a la rol_user mas el id del module_lab
+		e) rol_user_lab
+			aca se enlazan los usuaraios con el id de rol_aplication_lab
+			id aplication usuario
+			1    1          1 
+		
+		Front End
+			servicios obtener menus
+				Consultas 	
+					Consultas Alumno
+					Ingreso Alumno
+	
+	Olvido sus credenciales
