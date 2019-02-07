@@ -1,8 +1,9 @@
+1. necesitamos un repositorio 
 	Se llego a la conclusion utilizar git como repositorio
 2. base de datos?	
 	Oracle
 	MySql
-
+	DONDE SEA
 3. definir objetos
 
 	Login (seguridad)
